@@ -1,0 +1,130 @@
+* {
+	margin: 0;
+	padding: 0;
+	font-family: Poppins;
+	box-sizing: border-box;
+}
+
+body {
+	display: flex;
+}
+.container {
+	display: flex;
+}
+.sidebar {
+	display: flex;
+	height: 100%;
+	width: 95px;
+	background-color: #3e3f5e;
+	box-sizing: border-box;
+	flex-direction: column;
+	padding: 2px;
+  position: fixed;
+
+}
+.sidebar .header a {
+	text-decoration: none;
+	color: azure;
+}
+
+.sidebar .header .icon {
+	margin: 20px;
+}
+.sidebar .header {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	padding: 12px 10px;
+	height: 40px;
+	border-radius: 8px;
+	font-weight: 700;
+	box-sizing: border-box;
+	margin-bottom: 20px;
+}
+.sidebar .body a {
+	text-decoration: none;
+	color: aliceblue;
+}
+.sidebar .body {
+	padding: 12px 10px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	line-height: 40px;
+	border-radius: 8px;
+	box-sizing: border-box;
+}
+
+.sidebar .body .list-item {
+	border-radius: 8px;
+	box-sizing: border-box;
+	text-align: center;
+	width: 100%;
+	padding: 10px 10px;
+}
+.sidebar .body .list-item .desc {
+	line-height: 0;
+	padding-bottom: 10px;
+}
+.sidebar .body .list-item .icon i {
+	font-size: 40px;
+}
+.sidebar .body .list-item .icon img {
+	width: 35px;
+}
+.active span.hover {
+	position: fixed;
+	height: 40px;
+	left: 70px;
+	width: 8px;
+	background-color: #ffffff;
+	border-radius: 99px;
+}
+span.hover{
+	position: fixed;
+	height: 0;
+	left: 70px;
+	width: 8px;
+	background-color: #ffffff;
+	border-radius: 99px;
+	transition: height .3s ease-in-out;
+}
+.list-item:hover  span.hover  {
+	height: 40px;
+}
+
+.wrapper .main_content {
+	left: 0;
+	margin-left: 95px;
+	width: 100%;
+	right: 0;
+}
+.wrapper .main_content .info{
+	color: #717171;
+	line-height: 28px;
+  }
+.wrapper .main_content .header {
+	padding: 5px 20px;
+	background: rgb(255, 255, 255);
+	color: #717171;
+}
+#header {
+	height: 30px;
+	flex-direction: column;
+	display: flex;
+	align-items: center;
+	background: linear-gradient(#444444, #333333);
+	color: #bbbbbb;
+}
+
+#headerContent {
+	margin-left: 10px;
+}
+
+.container .navbar {
+	flex-grow: 1;
+	box-sizing: border-box;
+	width: 100%;
+	box-sizing: border-box;
+	background: aqua;
+}
